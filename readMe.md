@@ -106,10 +106,7 @@ For standard (non-distilled) baseline training, run:
 ```
 
 
-For BanTH multi-label classification, use the cross-entropy baseline script:
-```python cross_entropy.py
-```
-
+For BanTH multi-label classification, use the files with multi-label versions
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
 ## 🔹 Evaluation
