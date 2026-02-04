@@ -87,8 +87,9 @@ All datasets are also included inside their respective folders for convenience.
 ## 🔹 Train Knowledge Distillation (Teacher + Student)
 
 To train the teacher with focal loss and perform knowledge distillation, navigate to the desired dataset folder and run:
-    python focal.py
-
+```
+  python focal.py
+```
 
 This script:
 trains the teacher model using focal loss,
@@ -101,22 +102,23 @@ hidden-state alignment.
 ## 🔹 Train Baseline Models
 
 For standard (non-distilled) baseline training, run:
-```python
-python model_baselines.py
+```
+  python model_baselines.py
+```
 
 
 For BanTH multi-label classification, use the cross-entropy baseline script:
-```python
-python cross_entropy.py
-```python
+```python cross_entropy.py
+```
 
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
 ## 🔹 Evaluation
 
 To evaluate trained models, run:
-```python
-python eval.py
+```
+  python eval.py
+```
 
 Evaluation reports the following metrics:
 Accuracy
