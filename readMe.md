@@ -71,15 +71,16 @@ Each dataset has its **own folder**, containing:
     └── README.md
 
 
+
 ---
 
 ## 🚀 Training and Evaluation
 
 Each dataset is organized in a separate folder:
-subtask1A/
-subtask1B/
-deepHateExplainer/
-banth/
+- `subtask1A/`
+- `subtask1B/`
+- `deepHateExplainer/`
+- `banth/`
 
 All datasets are also included inside their respective folders for convenience.
 
@@ -100,18 +101,18 @@ hidden-state alignment.
 ## 🔹 Train Baseline Models
 
 For standard (non-distilled) baseline training, run:
-    python model_baselines.py
+  python model_baselines.py
 
 
 For BanTH multi-label classification, use the cross-entropy baseline script:
-    python cross_entropy.py
+  python cross_entropy.py
 
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
 ## 🔹 Evaluation
 
 To evaluate trained models, run:
-    python eval.py
+  python eval.py
 
 Evaluation reports the following metrics:
 Accuracy
