@@ -101,18 +101,21 @@ hidden-state alignment.
 ## 🔹 Train Baseline Models
 
 For standard (non-distilled) baseline training, run:
-  python model_baselines.py
+```python
+python model_baselines.py
 
 
 For BanTH multi-label classification, use the cross-entropy baseline script:
-  python cross_entropy.py
+```python
+python cross_entropy.py
 
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
 ## 🔹 Evaluation
 
 To evaluate trained models, run:
-  python eval.py
+```python
+python eval.py
 
 Evaluation reports the following metrics:
 Accuracy
