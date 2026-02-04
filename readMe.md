@@ -131,11 +131,12 @@ trained teacher models,
 corresponding distilled student models,
 checkpoints used to produce the results reported in the paper.
 After downloading, place the checkpoints inside their respective dataset folders:
-
-subtask1A/
-subtask1B/
-deepHateExplainer/
-banth/
+```
+  subtask1A/
+  subtask1B/
+  deepHateExplainer/
+  banth/
+```
 
 This setup allows evaluation scripts to run without modification and ensures full reproducibility of all experimental results.
 
