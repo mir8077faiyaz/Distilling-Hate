@@ -61,7 +61,7 @@ Each dataset has its **own folder**, containing:
 - dataset files,
 - teacher and student checkpoints,
 - training and evaluation scripts.
-
+```
     .
     ├── subtask1A/
     ├── subtask1B/
@@ -69,10 +69,9 @@ Each dataset has its **own folder**, containing:
     ├── banth/
     ├── figures/
     └── README.md
+```
 
 
-
----
 
 ## 🚀 Training and Evaluation
 
