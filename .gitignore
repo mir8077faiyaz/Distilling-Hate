@@ -1,0 +1,7 @@
+# MODELS
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+
