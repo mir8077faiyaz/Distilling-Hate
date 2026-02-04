@@ -61,14 +61,15 @@ Each dataset has its **own folder**, containing:
 - dataset files,
 - teacher and student checkpoints,
 - training and evaluation scripts.
-.
-├── subtask1A/
-├── subtask1B/
-├── deepHateExplainer/
-├── banth/
-├── figures/
-└── README.md
-.
+
+    .
+    ├── subtask1A/
+    ├── subtask1B/
+    ├── deepHateExplainer/
+    ├── banth/
+    ├── figures/
+    └── README.md
+
 
 ---
 
@@ -85,7 +86,7 @@ All datasets are also included inside their respective folders for convenience.
 ## 🔹 Train Knowledge Distillation (Teacher + Student)
 
 To train the teacher with focal loss and perform knowledge distillation, navigate to the desired dataset folder and run:
-python focal.py
+    python focal.py
 
 
 This script:
@@ -99,23 +100,48 @@ hidden-state alignment.
 ## 🔹 Train Baseline Models
 
 For standard (non-distilled) baseline training, run:
-python model_baselines.py
+    python model_baselines.py
 
 
 For BanTH multi-label classification, use the cross-entropy baseline script:
-python cross_entropy.py
+    python cross_entropy.py
 
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
 ## 🔹 Evaluation
 
 To evaluate trained models, run:
-python eval.py
+    python eval.py
 
 Evaluation reports the following metrics:
 Accuracy
 Macro-F1 (primary evaluation metric)
 Weighted-F1
+
+## 📦 Model Checkpoints (Google Drive)
+
+Due to GitHub file size limitations, trained teacher and student model checkpoints are hosted externally.
+All checkpoints for every dataset and task can be downloaded from the following Google Drive folder:
+https://drive.google.com/drive/folders/1TKrIyjYPUp3nHWFagGdx9a_PAOVFCMM9?usp=sharing
+The Drive directory is organized by dataset and contains:
+trained teacher models,
+corresponding distilled student models,
+checkpoints used to produce the results reported in the paper.
+After downloading, place the checkpoints inside their respective dataset folders:
+
+subtask1A/
+subtask1B/
+deepHateExplainer/
+banth/
+
+This setup allows evaluation scripts to run without modification and ensures full reproducibility of all experimental results.
+
+## ✅ Notes for Reproducibility
+
+All checkpoints correspond to models trained on official dataset splits
+Teacher models were trained using focal loss
+Student models were trained using supervised loss + knowledge distillation + hidden-state alignment
+Evaluation metrics reported in the paper can be reproduced directly using eval.py
 
 ## 📚 Dataset Sources and Acknowledgments
 🔹 BanTH Dataset (Transliterated Bangla)
