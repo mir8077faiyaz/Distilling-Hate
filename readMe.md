@@ -108,6 +108,7 @@ python model_baselines.py
 For BanTH multi-label classification, use the cross-entropy baseline script:
 ```python
 python cross_entropy.py
+```python
 
 Multi-label–specific counterparts of these scripts are provided inside the banth/ folder.
 
